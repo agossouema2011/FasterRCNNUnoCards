@@ -1,13 +1,14 @@
 #!/bin/sh
 #SBATCH --partition=GPUQ
 #SBATCH --account=share-ie-idi
-#SBATCH --time=00:15:00
+
+#SBATCH --time=165:00:00
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=12000
 #SBATCH --job-name="trainFasterRCNN"
 #SBATCH --output=resultPrint.out
-#SBATCH --mail-user=bidossessi.e.agossou@ntnu.no
+
 #SBATCH --mail-type=ALL
 
 WORKDIR=${SLURM_SUBMIT_DIR}
